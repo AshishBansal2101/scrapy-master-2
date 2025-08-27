@@ -158,3 +158,9 @@ intersphinx_disabled_reftypes: Sequence[str] = []
 
 # -- Other options ------------------------------------------------------------
 default_dark_mode = False
+
+# -- Add custom copy clipbaord JS and CSS files ------------------------------
+def setup(app):
+    app.add_js_file("copy.js")
+    app.add_css_file("custom.css")
+
